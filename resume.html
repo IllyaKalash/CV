@@ -1,0 +1,396 @@
+=<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Handjet&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet" />
+        <title>Document</title>
+        <style>
+            body {
+                font-size: 14px;
+            }
+                .v1_14 {
+                    width: 100%;
+                    height: 2009px;
+                    background: rgba(255,255,255,1);
+                    opacity: 1;
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+            }
+            .v2_12 {
+                width: 500px;
+                height: 500px;
+                background: url("https://img.itch.zone/aW1hZ2UvMjg3OTYwMS8xNzIyMDQ1OC5naWY=/794x1000/WR9f8r.gif");
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+                opacity: 1;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                overflow: hidden;
+                margin-left: 80px;
+            }
+            .v2_13 {
+                width: 360px;
+                height: 360px;
+                background: rgba(126,116,87,0.5);
+                opacity: 1;
+                position: absolute;
+                top: 70px;
+                left: 70px;
+                border-radius: 50%;
+                margin-left: 80px;
+            }
+            .v2_14 {
+                width: 215px;
+                color: rgba(255,255,255,1);
+                position: absolute;
+                top: 80px;
+                left: 145px;
+                font-family: Handjet;
+                font-weight: SemiBold;
+                font-size: 300px;
+                opacity: 1;
+                text-align: center;
+                margin-left: 80px;
+            }
+            .v2_16 {
+                width: 500px;
+                height: 100%;
+                background: #bbb49f;
+                opacity: 1;
+                position: absolute;
+                top: 500px;
+                left: 0px;
+                overflow: hidden;
+                margin-left: 80px;
+            }
+            .v2_17 {
+                width: 568px;
+                color: rgba(0,0,0,1);
+                position: absolute;
+                top: 70px;
+                left: 816px;
+                font-family: Handjet;
+                font-weight: SemiBold;
+                font-size: 128px;
+                opacity: 1;
+                text-align: right;
+            }
+            .v2_18 {
+                width: 428px;
+                color: rgba(0,0,0,1);
+                position: absolute;
+                top: 540px;
+                left: 36px;
+                font-family: Inconsolata;
+                font-weight: SemiBold;
+                opacity: 1;
+                text-align: left;
+                margin-left: 80px;
+            }
+            .v2_127 {
+                width: 828px;
+                color: rgba(0,0,0,1);
+                position: absolute;
+                top: 548px;
+                left: 556px;
+                font-family: Inconsolata;
+                font-weight: SemiBold;
+                opacity: 1;
+                text-align: left;
+                margin-left: 100;
+            }
+
+            .titles{
+                width: 828px;
+                color: rgba(0,0,0,1);
+                position: absolute;
+                font-family: Inconsolata;
+                font-weight: Bold;
+                opacity: 1;
+                font-size: 50px;
+                text-align: left;
+            }
+
+            .tree-cv {
+                line-height: 1.8;
+                font-family: Inconsolata;
+                padding-left: 2em; 
+                position: relative;
+            }
+
+            /* Main vertical line connecting all headers */
+            .tree-cv:before {
+                content: "";
+                position: absolute;
+                left: -15px;
+                top: 0;
+                bottom: 0.8em; /* Stop at the last header */
+                width: 1px;
+                background: #666;
+            }
+
+            .tree-cv ul {
+                padding-left: 2em;
+                margin: 0;
+            }
+
+            .tree-cv li {
+                list-style: none;
+                position: relative;
+                padding-left: 1em;
+            }
+
+            /* Connecting lines for content */
+            .tree-cv li:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0.8em;
+                width: 0.5em;
+                height: 1px;
+                background: #666;
+            }
+
+            .tree-cv li:after {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                width: 1px;
+                background: #666;
+            }
+
+            /* Horizontal lines connecting headers to main spine */
+            .section-header {
+                font-size: 25px;
+                font-family: Inconsolata;
+                font-weight: bold;
+                margin: 0.5em 0;
+                position: relative;
+                padding-left: 1em;
+            }
+
+            .section-header:before {
+                content: "";
+                position: absolute;
+                left: -2em;  /* Connect to the main spine */
+                top: 0.8em;
+                width: 2em;
+                height: 1px;
+                background: #666;
+            }
+
+            .tree-cv li:last-child:after {
+                height: 0.8em;
+            }
+
+            .project-title {
+                font-size: 20px;
+                font-weight: bold;
+                font-family: Inconsolata;
+            }
+
+            .section-title {
+                font-size: 15px;
+                font-weight: bold;
+                font-family: Inconsolata;
+            }
+
+            /* Remove extra vertical lines from top-level items */
+            .tree-cv > li:before {
+                display: none;
+            }
+
+            .tree-cv > li:after {
+                display: none;
+            }
+
+            .tree-elements {
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="v1_14">
+            <div class="v2_12"></div><div class="v2_13">
+
+            </div>
+            <span class="v2_14">IK</span>
+            <div class="v2_16"></div>
+            <span class="v2_17">Illia Kalashnikov</span>
+            <span class="v2_18">
+                <ul class="tree-cv">
+                    <li>
+                        <div class="section-header">Contact Details:</div>
+                        <ul>
+                            <li class="tree-elements">Phone: +380 67 354 66 50</li>
+                            <li class="tree-elements">Email: ilkalash2007@gmail.com</li>
+                            <li class="tree-elements"><a href="https://github.com/IllyaKalash">GitHub</a></li>
+                            <li class="tree-elements">Kyiv, Ukraine</li>
+                        </ul>
+                    </li>
+                
+                    <li>
+                        <div class="section-header">Employment:</div>
+                        <ul>
+                            <li class="tree-elements">Part-time(5-6h)</li>
+                        </ul>
+                    </li>
+                
+                    <li>
+                        <div class="section-header">Skills:</div>
+                        <ul>
+                            <li class="tree-elements">Programming languages:
+                                <ul>
+                                    <li>Python</li>
+                                    <li>C#</li>
+                                    <li>JavaScript</li>
+                                    <li>Swift(apple)</li>
+                                    <li>SQL</li>
+                                </ul>
+                            </li>
+                            <li class="tree-elements">Technologies and tools:
+                                <ul>
+                                    <li>GitHub</li>
+                                    <li>WebDeveloping (html, CSS, JavaScript)</li>
+                                    <li>Unity</li>
+                                    <li>Blender</li>
+                                    <li>DavinciResolve</li>
+                                    <li>PhotoShop</li>
+                                </ul>
+                            </li>
+                            <li class="tree-elements">Have a knowledge in writing/structuring designer documents</li>
+                        </ul>
+                    </li>
+                
+                    <li>
+                        <div class="section-header">Additional skills:</div>
+                        <ul>
+                            <li class="tree-elements">Basics of working with databases(Peewee, PGAdmin, Access, Excel)</li>
+                        </ul>
+                    </li>
+                
+                    <li>
+                        <div class="section-header">Languages:</div>
+                        <ul>
+                            <li class="tree-elements">Ukraine – native</li>
+                            <li class="tree-elements">English – B2+</li>
+                            <li class="tree-elements">Czech – B1-(currently studying)</li>
+                        </ul>
+                    </li>
+                
+                    <li>
+                        <div class="section-header">Personal qualities:</div>
+                        <ul>
+                            <li class="tree-elements">Quick learning of new technologies</li>
+                            <li class="tree-elements">Ability to work in a team</li>
+                            <li class="tree-elements">High motivation to develop in the field of programming</li>
+                        </ul>
+                    </li>
+                </ul>
+            </span>
+
+            <span class="v2_127">
+                <ul class="tree-cv">
+                    <li>
+                        <div class="section-header">Goals:</div>
+                        <ul>
+                            <li class="tree-elements">I want to obtain work experience in GameDev, preferably I want to be a game designer, but I will be absolutely fine with another job in this sphere.</li>
+                        </ul>
+                    </li>
+                
+                    <li>
+                        <div class="section-header">Education:</div>
+                        <ul>
+                            <li class="tree-elements">Graduate IT class of lyceum "Universum" Kyiv</li>
+                            <li class="tree-elements">Completed Unity Gamedev School</li>
+                            <li class="tree-elements">Graduated from artist school № 3 of Kyiv</li>
+                            <li class="tree-elements">Obo.dev</li>
+                        </ul>
+                    </li>
+                
+                    <li>
+                        <div class="section-header">Additional achievements:</div>
+                        <ul>
+                            <li class="tree-elements">participated in a Kyiv programming olympiads among highschoolers.</li>
+                        </ul>
+                    </li>
+                
+                    <li>
+                        <div class="section-header">Experience</div>
+                        <ul>
+                            <li class="tree-elements">Educational projects:
+                                <ul>
+                                    <li>
+                                        <a class="project-title" href="https://icedragonfish.itch.io/egg-the-game">[Egg The Game]</a>
+                                        <ul>
+                                            <li>
+                                                <span class="section-title">Description:</span>
+                                                <ul>
+                                                    <li>Unity indie game that I am currently working on with a small team of enthusiasts.</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <span class="section-title">Roles:</span>
+                                                <ul>
+                                                    <li>Project lead</li>
+                                                    <li>Programmer</li>
+                                                    <li>Game Designer(Level Designer, Story Designer, etc)</li>
+                                                    <li>Manager</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <span class="section-title">Technologies used:</span>
+                                                <ul>
+                                                    <li>C#</li>
+                                                    <li>Unity</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="project-title" href="https://drive.google.com/file/d/1WyS9BXl3UamSMQ78AwmmUtsFCXfpaJO3/view?usp=sharing">[Gravity Ball]</a>
+                                        <ul>
+                                            <li>
+                                                <span class="section-title">Description:</span>
+                                                <ul>
+                                                    <li>Uncompleted android mobile game that was made with Unity3D all by myself.</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <span class="section-title">Technologies used:</span>
+                                                <ul>
+                                                    <li>C#</li>
+                                                    <li>Unity</li>
+                                                    <li>Android libraries</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                
+                    <li>
+                        <div class="section-header">Internship:</div>
+                        <ul>
+                            <li class="tree-elements">Involve.software(summer 2022): databases (SQL, peewee, python, PGAdmin).</li>
+                        </ul>
+                    </li>
+                
+                    <li>
+                        <div class="section-header">Additional information:</div>
+                        <ul>
+                            <li class="tree-elements">Ready for training, internships and completing test tasks.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </span>
+        </div>
+    </body>
+</html>
